@@ -1,0 +1,71 @@
+@charset "utf-8";
+
+
+:root {
+    --skin-color:#87C6C6;
+}
+
+
+span{
+	color: var(--main-text-color-1);
+	font-size:0.8rem;
+}
+
+button {
+	color:var(--skin-color);
+  border-color: var(--skin-color);
+}
+
+
+button:hover{
+  background-color: var(--skin-color) !important;
+}
+
+.active {
+	 background-color: var(--skin-color) !important;
+}
+
+				.logo{
+					background-image: url("../imgs/Arche/logo-emerige.png");
+				}
+
+								#control-help{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-help.png)
+								}
+
+								#control-help:hover{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-help-hover.png)
+								}
+
+								#control-left{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-left.png)
+								}
+
+								#control-left:hover{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-left-hover.png)
+								}
+
+								#control-right{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-right.png)
+								}
+
+								#control-right:hover{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-right-hover.png)
+								}
+
+								#control-zoom-out{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-zoom_out.png)
+								}
+
+								#control-zoom-out:hover{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-zoom_out-hover.png)
+								}
+
+								#control-zoom-in{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-zoom_in.png)
+								}
+
+								#control-zoom-in:hover{
+									background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-zoom_in-hover.png)
+								}
+

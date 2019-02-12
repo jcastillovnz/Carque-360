@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+:root {
+    --emerige-color:#E60A6C;
+}
+
+button {
+	color:var(--emerige-color);
+  border-color: var(--emerige-color);
+}
+
+
+button:hover{
+  background-color: var(--emerige-color) !important;
+}
+
+				.logo{
+					background-image: url("../imgs/Emerige/logo-emerige.png");
+				}
+
+
+			.side-bar-content:hover > #control-open{
+				background-image: url(../imgs/Emerige/pictogram/pictogram-open-hover.png)			
+			}
+
+
+						#control-back{
+								background-image: url(../imgs/Emerige/pictogram/pictogram-exit.png)
+							}
+
+							#control-open{
+								background-image: url(../imgs/Emerige/pictogram/pictogram-open.png)
+							}
+
+
+							#plan-3d > .side-bar-content > .side-text{
+								color:var(--emerige-color);
+							}
+
+							#plan-de-vente > .side-bar-content > .side-text{
+								color:var(--emerige-color);
+							}
+
+							#visite-virtuelle > .side-bar-content > .side-text{
+								color:var(--emerige-color);
+							}
+
+
+							#return{
+								background-color: var(--emerige-color);
+							}
+
+							#plan-technique{
+								background-image: url(../imgs/plan.png);
+							}
+
+							#plan-axo{
+								background-image: url(../imgs/Axo_appart.png);
+							}
+
+
+
+
+
+
+
+
+
+
+

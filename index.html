@@ -1,0 +1,312 @@
+<!doctype html>
+<html lang="fr">
+<head>    
+  <title>Cocoon</title>
+
+  <meta name="robots" content="index, follow" />
+  <meta name="Content-Type" charset="UTF-8">
+  <meta name="Content-Language" content="fr">   
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <meta name="Description" content="Virtual 3D Solutions for Immersive Visit">
+  <meta name="Subject" content="Virtual 3D Visit">
+
+  <meta name="Copyright" content="OFF DESIGN">
+  <meta name="geo.placename" content="Marseille" />
+  <meta name="geo.position" content="43.286159, 5.356316" />
+  <meta name="geo.region" content="Bouches-du-Rhône" />
+
+  <link rel="stylesheet" type="text/css" href="css/index.css"/>
+  <link rel="stylesheet" type="text/css" href="css/index_arche_Egray.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+
+
+
+</head>
+
+
+
+
+
+<body class="container-fluid">
+
+  
+  <div class="header">
+
+    <div class="logo">
+    </div>
+
+    <a href="#">
+      <button class="exit">
+        Quitter
+      </button>
+    </a>
+
+  </div>
+
+  <div class="container">
+
+<style type="text/css">
+body, html{
+margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden;
+border: none;
+}
+iframe{
+margin:0px;
+padding: none;
+border: none;
+width:100%;
+height:100%;
+}
+</style>
+
+
+
+
+
+    <div class="container-view">
+      <h1 class="main-title">MAQUETTE</h1>
+
+      <div class="windows">
+        <!-- PUT THE 3D MODEL HERE -->
+<iframe scrolling="no"       id="iframe" src="iframes/roof/index.html" name="iframe_a"></iframe>
+
+
+
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <div class="container-filter">
+      <div class="filter" id="legend">
+        <div class="legend-col-1">
+          <div class="type">
+            <div class="type-color" id="color-studio">
+            </div>
+            <div class="type-name">
+              <span>studio</span>
+            </div>
+          </div>
+          <div class="type">
+            <div class="type-color" id="color-3piece">
+            </div>
+            <div class="type-name">
+              <span>3 pièces</span>
+            </div>
+          </div>
+          <div class="type">
+            <div class="type-color" id="color-5piece">
+            </div>
+            <div class="type-name">
+              <span>5 pièces</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="legend-col-1">
+          <div class="type">
+            <div class="type-color" id="color-2piece">
+            </div>
+            <div class="type-name">
+              <span>2 pièces</span>
+            </div>
+          </div>
+          <div class="type">
+            <div class="type-color" id="color-4piece">
+            </div>
+            <div class="type-name">
+              <span>4 pièces</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="filter" id="name">
+        <div class="filter-title">
+          <h2>RESIDENCE</h2>
+        </div>
+        <div class="filter-button">
+          <a href="www.contentandforms.com">
+            <button class="button large active"> 
+              E-gray
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter" id="building">
+        <div class="filter-title">
+          <h2>IMMEUBLE</h2>
+        </div>
+        <div class="filter-button" id="button-building">
+
+          <a href="#">
+            <button class="button small active"> 
+              A
+            </button>
+          </a>
+
+          <a href="#">
+            <button class="button small"> 
+              B
+            </button>
+          </a>
+
+          <a href="#">
+            <button class="button small"> 
+              C
+            </button>
+          </a>
+        </div>
+      </div>
+
+      <div class="filter" id="view">
+        <div class="filter-title">
+          <h2>VUES</h2>
+        </div>
+        <div class="filter-button">
+          <a onclick="roof()"  >
+            <button class="button large active"> 
+              Aérienne
+            </button>
+          </a>
+
+          <a onclick="pedestrian()"  >
+            <button class="button large"> 
+              Piétonne
+            </button>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="filter" id="floor">
+        <div class="filter-title">
+          <h2>NIVEAUX</h2>
+        </div>
+        <div class="filter-button">
+
+
+    <a  onclick="r6()"  >
+            <button class="button large"> 
+             6<sup>e</sup> Étage
+            </button>
+          </a>
+
+
+
+    <a  onclick="r5()"  >
+            <button class="button large"> 
+              5<sup>e</sup> Étage
+            </button>
+          </a>
+
+
+
+
+             <a  onclick="r4()" >
+            <button class="button large"> 
+              4<sup>e</sup> Étage
+            </button>
+          </a>
+
+             <a  onclick="r3()" >
+            <button class="button large"> 
+              3<sup>e</sup> Étage
+            </button>
+          </a>
+
+              <a   onclick="r2()" >
+            <button class="button large"> 
+              2<sup>e</sup> Étage
+            </button>
+          </a>
+
+          <a   onclick="r1()" >
+            <button class="button large"> 
+              1<sup>e</sup> Étage
+            </button>
+          </a>
+
+          <a  onclick="rdc()" >
+            <button  class="button large"> 
+              Rdc
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+
+
+
+<script type="text/javascript">
+var iframe = document.getElementById('iframe');
+
+
+function rdc() {
+iframe.src = "iframes/rdc/index.html";
+}
+function r1() {
+iframe.src = "iframes/r1/index.html";
+}
+function r2() {
+iframe.src ="iframes/r2/index.html";
+}
+function r3() {
+iframe.src = "iframes/r3/index.html";
+}
+function r4() {
+iframe.src = "iframes/r4/index.html";
+}
+function r5() {
+iframe.src = "iframes/r5/index.html";
+}
+function r6() {
+iframe.src ="iframes/r6/index.html";
+}
+function roof() {
+iframe.src = "iframes/roof/index.html";
+}
+function pedestrian() {
+iframe.src = "iframes/pedestrian/index.html";
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  <script src="js/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/script.js"> </script>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+</body>
+</html>

@@ -1,0 +1,219 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Pick A Color From An Image Demo</title>
+<style>
+*,*:after,*:before{
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+html,body{
+  height:100%;
+}
+body{
+  margin:0;
+  padding:0;
+  position:relative;
+  background:#22142b;
+}
+h3{
+  font-size: 25px;
+  font-weight: bold;
+  font-family: serif;
+  color: #ECF0F1;
+  text-align: center;
+}
+
+.thumbnail{
+  position:relative;
+  display: block;
+  width: 90%;
+  overflow:hidden;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.thumbnail img {
+  display: block;
+  width: 100%;
+  cursor: crosshair;
+  border: 5px solid #fff;
+  margin: 0 auto;
+}
+.result{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  background: rgba(0, 0, 0, 0.2);
+  color: #fff;
+  margin: 0;
+  padding: 10px 15px;
+  display: block;
+}
+.result span {
+  display: block;
+  font-size: 13px;
+}
+.preview{
+  position:absolute;
+  top:5px;
+  right:5px;
+  display:block;
+  margin:0;
+  padding:0;
+  width:50px;
+  height:50px;
+  border: 5px solid #FFF;
+  border-right: none;
+  border-top: none;
+}
+#cs{ 
+  display:none;
+}
+@media (min-width:768px){
+  .thumbnail{
+    width:85%;
+  }
+}
+@media (min-width:1024px){
+  .thumbnail{
+    width:55%;
+  }
+}
+</style>
+</head>
+
+<body>
+<h1 style="color:#fff;" align="center">Pick A Color From An Image Demo</h1>
+<div class="css-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* CSSScript Demo Page */
+google_ad_slot = "3025259193";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script> 
+      <script type="text/javascript"
+src="//pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<div class="thumbnail">
+  <div class="preview"></div>
+  <img alt="" width="400" src="1.png"
+
+  <div class="result">
+    <span>HEX: #22142b</span>
+    <span>RGB: rgb(34,20,43)</span>
+  </div>
+
+  <canvas id="cs"></canvas>
+<script>
+// vars
+var img = _('.thumbnail img'),
+    canvas = _('#cs'),
+    result = _('.result'),
+    preview = _('.preview'),x = '',y = '';
+
+
+
+// click function
+img.addEventListener('click', function(e){
+  // chrome
+  if(e.offsetX) {
+    x = e.offsetX;
+    y = e.offsetY; 
+  }
+  // firefox
+  else if(e.layerX) {
+    x = e.layerX;
+    y = e.layerY;
+  }
+  useCanvas(canvas,img,function(){
+    // get image data
+    var p = canvas.getContext('2d')
+    .getImageData(x, y, 1, 1).data;
+    // show info
+    result.innerHTML = '<span>HEX: '+rgbToHex(p[0],p[1],p[2])+'</span>'+
+     '<span>RGB:  rgb('+
+      p[0]+','+
+      p[1]+','+
+      p[2]+')</span>';
+    
+    // add background in body
+    document.body.style.background =rgbToHex(p[0],p[1],p[2]);
+  });
+},false);
+
+// preview function mousemove
+img.addEventListener('mousemove', function(e){
+  // chrome
+  if(e.offsetX) {
+    x = e.offsetX;
+    y = e.offsetY; 
+  }
+  // firefox
+  else if(e.layerX) {
+    x = e.layerX;
+    y = e.layerY;
+  }
+  
+  useCanvas(canvas,img,function(){
+    
+    // get image data
+    var p = canvas.getContext('2d')
+    .getImageData(x, y, 1, 1).data;
+    // show preview color
+    preview.style.background = rgbToHex(p[0],p[1],p[2]);
+  });
+},false);
+
+
+// canvas function
+function useCanvas(el,image,callback){
+  el.width = image.width; // img width
+  el.height = image.height; // img height
+  // draw image in canvas tag
+  el.getContext('2d')
+  .drawImage(image, 0, 0, image.width, image.height);
+  return callback();
+}
+// short querySelector
+function _(el){
+  return document.querySelector(el);
+};
+
+// convert rgba to hex 
+// http://stackoverflow.com/questions/5623838/rgb-to-hex-and-hex-to-rgb
+function componentToHex(c) {
+  var hex = c.toString(16);
+  return hex.length == 1 ? "0" + hex : hex;
+}
+function rgbToHex(r, g, b) {
+  return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
+}
+
+function findPos(obj) {
+    var curleft = 0, curtop = 0;
+    if (obj.offsetParent) {
+        do {
+            curleft += obj.offsetLeft;
+            curtop += obj.offsetTop;
+        } while (obj = obj.offsetParent);
+        return { x: curleft, y: curtop };
+    }
+    return undefined;
+}
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-46156385-1', 'cssscript.com');
+  ga('send', 'pageview');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+@charset "utf-8";
+
+:root {
+    --arche-cocoon-color:#87C6C6;
+}
+
+button {
+	color:var(--arche-cocoon-color);
+  border-color: var(--arche-cocoon-color);
+}
+
+
+button:hover{
+  background-color: var(--arche-cocoon-color) !important;
+}
+
+.level{
+	z-index:100;
+}
+
+.active {
+	color:white;
+	 background-color: var(--arche-cocoon-color) !important;
+}
+
+				.logo{
+					background-size:100%;
+					background-image: url("../imgs/Arche/logo-arche.png");
+				}
+
+
+			.side-bar-content:hover > #control-open{
+				background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-open-hover.png)			
+			}
+
+
+						#control-back{
+								background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-exit.png)
+							}
+
+							#control-open{
+								background-image: url(../imgs/Arche/pictogram_cocoon/pictogram-open.png)
+							}
+
+
+							#plan-3d > .side-bar-content > .side-text{
+								color:var(--arche-cocoon-color);
+							}
+
+							#plan-de-vente > .side-bar-content > .side-text{
+								color:var(--arche-cocoon-color);
+							}
+
+							#visite-virtuelle > .side-bar-content > .side-text{
+								color:var(--arche-cocoon-color);
+							}
+
+
+							#return{
+								background-color: var(--arche-cocoon-color);
+							}
+
+							#plan-technique{
+								background-size:90%;
+								background-image: url(../imgs/Arche/plan_technique_cocoon/T5_A502-0.png);
+							}
+
+							#plan-axo{
+								background-size:80%;
+								background-image: url(../imgs/Arche/plan_3d_cocoon/T5_A502-0.png);
+							}
+
+
+
+
+
+
+
+
+
+
+

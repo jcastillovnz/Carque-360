@@ -1,0 +1,582 @@
+@charset "utf-8";
+
+:root {
+    --main-background-color:#1D1D1B;
+    --background-color:#F5F4F5;
+    --main-text-color-1:#4E4D4D;
+    --main-text-color-2:#B4B4B4;
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -ms-overflow-style: scrollbar;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+@-ms-viewport {
+    width: device-width;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family:"Roboto";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+}
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-top: 0;
+    margin-bottom: 0;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+h1.main-title{
+    position: absolute;
+    font-weight: 500;
+    font-size: 2.3rem;
+}
+
+h2, .h2 {
+    color: var(--main-text-color-2);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+span{
+    color: white;
+    font-size:0.8rem;
+}
+
+button {
+    font-size: 1rem;
+    border:solid;
+    border-width: 1px;
+    border-radius: 2px;
+    margin-top: 5px;
+    padding-top:0.17rem;
+    padding-bottom:0.27rem;
+    background-color: transparent !important;
+    -webkit-transition: background-color 0.7s, color 0.9s; /* Safari */
+    transition: background-color 0.7s, color 0.9s;
+}
+
+button:focus {
+    outline:0;
+}
+
+button:hover{
+    border-radius: 2px;
+    color:white;
+    background-color: var(--emerige-color) !important;
+    cursor:pointer;
+}
+
+.exit{
+    color:white;
+    border-color:white;
+}
+
+.exit:hover{
+    color:var(--main-background-color);
+    background-color: white !important;
+}
+
+
+.container-fluid{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color:#1D1D1B;
+    width:100vw;
+    height:100%;
+    padding-left:25px;
+    padding-right:25px;
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width:100%;
+    height:100px;
+}
+
+.logo{
+    width:170px;
+    height: 100%;
+    background-position: left center;
+    background-repeat: no-repeat;
+}
+
+
+.container{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: flex-start;
+    justify-content:flex-start;
+    width:100%;
+    min-height:83vh;
+    overflow: hidden;
+    background-color: var(--background-color);
+    z-index:1;
+}
+
+.side-bar{
+    display:flex;
+    flex-direction: row;
+    align-content: flex-start;
+    justify-content: flex-end;
+    flex-grow:0;
+    width:40px;
+    padding-top:15px;
+    padding-bottom:15px;
+    box-shadow: 0px 0px 12px #888888;
+    -webkit-transition: flex-grow 0.6s cubic-bezier(0.645, 0.045, 0.355, 1.000);; /* Safari */
+    transition: flex-grow 0.6s cubic-bezier(0.645, 0.045, 0.355, 1.000);;
+}
+
+.side-bar-active{
+    flex-grow:10;
+}
+
+
+.side-bar-content:hover > .side-text{
+    letter-spacing:0.07rem
+}
+
+.side-bar-content:hover > #control-back{
+    transform-origin: center;
+    transform: rotate(45deg);
+}
+
+
+
+.side-bar-content{
+    display:flex;
+    flex-direction: column;
+    align-content: flex-start;
+    justify-content: flex-end;
+    width:40px;
+    height:100%;
+}
+
+.hidden{
+    display:none;
+}
+
+
+.side-text{
+    font-weight: 300;
+    white-space: nowrap;
+    transform-origin: center;
+    transform: rotate(270deg);
+    -webkit-transition:letter-spacing 0.7s ; /* Safari */
+    transition:letter-spacing 0.7s;
+}
+
+
+.side-control{
+    width:30px;
+    height:30px;
+    margin-left:5px;
+    margin-right:5px;
+    margin-top:15px;
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transition: background-image 0.7s, transform 0.7s; /* Safari */
+    transition: background-image 0.7s, transform 0.7s;
+}
+
+.side-bar-content:hover > #control-back{
+    background-image: url(../imgs/pictogram/pictogram-exit-hover.png)
+}
+
+
+#return{
+    background-color: var(--emerige-color);
+    z-index:30;
+}
+
+#plan-3d{
+    background-color: var(--background-color);
+    z-index:20;
+}
+
+#plan-3d > .side-bar-content > .side-text{
+    color:var(--emerige-color);
+}
+
+
+#plan-de-vente{
+    background-color: white;
+    z-index:10;
+}
+
+#plan-de-vente > .side-bar-content > .side-text{
+    color:var(--emerige-color);
+}
+
+
+#visite-virtuelle{
+    background-color: var(--background-color);
+    z-index:5;
+}
+
+#visite-virtuelle > .side-bar-content > .side-text{
+    color:var(--emerige-color);
+}
+
+
+.content{
+    display: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    width:100%;
+    height:100%;
+    margin-left:25px;
+    margin-right:25px;
+}
+
+.content-active{
+    display:flex;
+}
+
+.content-text{
+    display:flex;
+    width:20%;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    white-space: nowrap;
+    flex-grow: 1;
+    color:var(--main-text-color-1);
+    font-size: 2.5rem;
+}
+
+.content-image{
+    flex-grow: 10;
+    margin-left:25px;
+}
+
+#plan-technique{
+    background-size:85%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#plan-axo{
+    background-position: 50% 30%;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.content-text > h2{
+    white-space: nowrap;
+    flex-grow: 0;
+    color:var(--main-text-color-1);
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+h2.side-text{
+    color:white;
+}
+
+.active {
+    background-color: var(--emerige-color) !important;
+    color: white;
+}
+
+@media only screen and (min-device-width: 320px) and (orientation: landscape) {   /****************  SMARTPHONES - IPHONE  *************** */
+
+
+
+    .container-fluid{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        height:50px;
+    }
+
+    .logo{
+        width:60px;
+        background-size:100%;
+    }
+
+    .container{
+        height:calc(100vh - 50px - 25px);
+    }
+
+    .side-bar-active{
+        flex-grow:10;
+        overflow-y: scroll;
+    }
+
+    a button{
+        padding-bottom: 0.2rem;
+    }
+
+    button {
+        padding-bottom: 1.6rem;
+    }
+
+
+    .content{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+        height:140vh;
+        margin-left:15px;
+        margin-right:15px;
+    }
+
+
+    .content-text{
+        display:flex;
+        width:auto;
+        margin-bottom:1.5rem;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        flex-grow: 1;
+        color:var(--main-text-color-1);
+        font-size: 1.5rem;
+    }
+
+    .content-image{
+        flex-grow: 10;
+        width:100%;
+        height:200vh;
+        margin-left:0px;
+    }
+
+    #plan-technique{
+        background-size:100%;
+    }
+
+    #plan-axo{
+        background-position: 50% 30%;
+        background-repeat: no-repeat;
+        background-size: 90%;
+    }
+
+    .turn-message{
+        display:none;
+    }
+
+
+
+}
+
+@media only screen and (min-device-width: 320px) and (orientation: portrait) {
+    
+    .header{
+        display:none;
+    }
+
+    .container{
+        display:none;
+    }
+
+    .container-view{
+        display:none;
+    }
+
+    .container-filter{
+        display:none;
+    }
+
+    .turn-message{
+        display:block;
+        color:white;
+        width:100%;
+        height:100%;
+        text-align: center;
+        margin-top:calc(50vh - 1rem);
+
+    }
+}
+
+
+
+@media only screen and (min-device-width: 812px){    /****************   TABLETTES - IPAD  *************** */
+
+
+    .content{
+        margin-left:25px;
+        margin-right:25px;
+        height:110vh;
+    }
+
+
+    .content-text{
+        font-size: 2rem;
+    }
+
+    
+    .container-fluid{
+        padding-left:15px;
+        padding-right:15px;
+    }
+
+    .header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width:100%;
+        height:100px;
+    }
+
+    .logo{
+        width:100px;
+        background-size:100%;
+    }
+
+    .container{
+        height:calc(100vh - 100px - 25px);
+    }
+
+    #plan-axo{
+        background-size: 100%;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 1200px){
+
+    .logo{
+        width:90px;
+        background-size:100%;
+    }
+
+    .container-fluid{
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+    .container{
+        height:calc(100vh - 100px - 2vh);
+    }
+
+    .content{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width:100%;
+        height: 100%;
+        margin-left:25px;
+        margin-right:25px;
+    }
+
+    .side-bar-active{
+        flex-grow:10;
+        overflow-y:auto;
+    }
+
+    #plan-technique{
+        background-size:95%;
+    }
+
+    #plan-axo{
+        background-position: 50% 30%;
+        background-size: 100%;
+    }
+
+    .content-image{
+        height:100%;
+        margin-left:0px;
+    }
+
+    a button{
+        padding-bottom: 0.2rem;
+    }
+
+    button {
+        padding-bottom: 0.3rem;
+    }
+}
+
+
+@media only screen and (min-width: 1900px){
+
+    .logo{
+        width:90px;
+        background-size:100%;
+    }
+
+    .container-fluid{
+        padding-left:25px;
+        padding-right:25px;
+    }
+
+    .container{
+        height:88vh;
+    }
+
+    .content{
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width:100%;
+        height: calc(88vh - 15px);
+        margin-left:25px;
+        margin-right:25px;
+    }
+
+    .content-text{
+        font-size: 2.5rem;
+    }
+
+    #plan-technique{
+        background-size:85%;
+    }
+
+    #plan-axo{
+        background-position: 50% 40%;
+        background-size: 85%;
+    }
+
+    .content-image{
+        height:84vh;
+        margin-left:0px;
+    }
+}

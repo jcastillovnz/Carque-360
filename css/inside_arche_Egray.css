@@ -1,0 +1,72 @@
+@charset "utf-8";
+
+:root {
+    --emerige-color:#C4583A;
+}
+
+button {
+	color:var(--emerige-color);
+  border-color: var(--emerige-color);
+}
+
+
+button:hover{
+  background-color: var(--emerige-color) !important;
+}
+
+				.logo{
+					background-size:100%;
+					background-image: url("../imgs/Arche/logo-arche.png");
+				}
+
+
+			.side-bar-content:hover > #control-open{
+				background-image: url(../imgs/Arche/pictogram_Egray/pictogram-open-hover.png)			
+			}
+
+
+						#control-back{
+								background-image: url(../imgs/Arche/pictogram_Egray/pictogram-exit.png)
+							}
+
+							#control-open{
+								background-image: url(../imgs/Arche/pictogram_Egray/pictogram-open.png)
+							}
+
+
+							#plan-3d > .side-bar-content > .side-text{
+								color:var(--emerige-color);
+							}
+
+							#plan-de-vente > .side-bar-content > .side-text{
+								color:var(--emerige-color);
+							}
+
+							#visite-virtuelle > .side-bar-content > .side-text{
+								color:var(--emerige-color);
+							}
+
+
+							#return{
+								background-color: var(--emerige-color);
+							}
+
+							#plan-technique{
+								background-image: url(../imgs/plan.png);
+							}
+
+							#plan-axo{
+								background-size:80%;
+								background-image: url(../imgs/Arche/plan_3d_cocoon/T4_A102.png);
+							}
+
+
+
+
+
+
+
+
+
+
+
