@@ -174,14 +174,17 @@ $this.removeClass('preloading');
 for(i; i < l; i++){
 var display = (i === 0) ? 'visible' : 'hidden';
 var none = 'hidden'
-path_masks="https://raw.githubusercontent.com/jcastillovnz/Orbital-3D/master/iframes/r2/img/r2/masks/"
-path_highlights_A201="img/r2/highlights/A201/"
-path_highlights_A202="img/r2/highlights/A202/"
-path_highlights_A203="img/r2/highlights/A203/"
-path_highlights_A204="img/r2/highlights/A204/"
-path_highlights_B201="img/r2/highlights/B201/"
-path_highlights_B202="img/r2/highlights/B202/"
-path_highlights_B203="img/r2/highlights/B203/"
+
+path_masks="img/r2/masks/"
+
+
+
+path_highlights_B21="img/r2/highlights/B21/"
+path_highlights_B22="img/r2/highlights/B22/"
+path_highlights_B23="img/r2/highlights/B23/"
+path_highlights_B24="img/r2/highlights/B24/"
+
+
 
 extencion=".png"
 html += '<img class="threesixty-frame renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';

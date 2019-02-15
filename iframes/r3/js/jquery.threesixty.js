@@ -174,23 +174,27 @@ $this.removeClass('preloading');
 for(i; i < l; i++){
 var display = (i === 0) ? 'visible' : 'hidden';
 var none = 'hidden'
-path_masks="https://raw.githubusercontent.com/jcastillovnz/Orbital-3D/master/iframes/r3/img/r3/masks/"
-path_highlights_A302="img/r3/highlights/A302/"
-path_highlights_A301="img/r3/highlights/A301/"
-path_highlights_A303="img/r3/highlights/A303/"
-path_highlights_B301="img/r3/highlights/B301/"
-path_highlights_B302="img/r3/highlights/B302/"
+
+path_masks="img/r3/masks/"
+
+
+
+
+path_highlights_B31="img/r3/highlights/B31/"
+path_highlights_B32="img/r3/highlights/B32/"
+path_highlights_B33="img/r3/highlights/B33/"
+
+
+
+
 
 extencion=".png"
 html += '<img class="threesixty-frame renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 html += '<img class="masks center" alt="'+i+'" crossOrigin = "Anonymous"  style="visibility:' + display + ';" id="true"     data-index="' + i + '"   src="' + path_masks+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A301_' + i + '" src="' + path_highlights_A301+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A302_' + i + '" src="' + path_highlights_A302+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A303_' + i + '" src="' + path_highlights_A303+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B301_' + i + '" src="' + path_highlights_B301+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B302_' + i + '" src="' + path_highlights_B302+''+i+extencion+'"/>';
-
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B31_' + i + '" src="' + path_highlights_B31+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B32_' + i + '" src="' + path_highlights_B32+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B33_' + i + '" src="' + path_highlights_B33+''+i+extencion+'"/>';
 
         }
         $this.html(html);

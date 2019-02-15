@@ -166,12 +166,21 @@ $this.removeClass('preloading');
 for(i; i < l; i++){
 var display = (i === 0) ? 'visible' : 'hidden';
 var none = 'hidden'
-path_masks="https://raw.githubusercontent.com/jcastillovnz/Orbital-3D/master/iframes/rdc/img/rdc/masks/"
-path_highlights_A001="img/rdc/highlights/A001/"
-path_highlights_A002="img/rdc/highlights/A002/"
-path_highlights_A003="img/rdc/highlights/A003/"
-path_highlights_A004="img/rdc/highlights/A004/"
-path_highlights_A005="img/rdc/highlights/A005/"
+
+path_masks="img/rdc/masks/"
+
+
+
+path_highlights_B01="img/rdc/highlights/B01/"
+path_highlights_B02="img/rdc/highlights/B02/"
+path_highlights_B03="img/rdc/highlights/B03/"
+path_highlights_B04="img/rdc/highlights/B04/"
+path_highlights_B05="img/rdc/highlights/B05/"
+path_highlights_B06="img/rdc/highlights/B06/"
+path_highlights_B07="img/rdc/highlights/B07/"
+path_highlights_B08="img/rdc/highlights/B08/"
+path_highlights_B09="img/rdc/highlights/B09/"
+
 
 
 
@@ -181,13 +190,15 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
 
 html += '<img class="masks center" alt="'+i+'" crossOrigin = "Anonymous"  style="visibility:' + display + ';" id="true"     data-index="' + i + '"   src="' + path_masks+''+i+extencion+'"/>';
 
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A001_' + i + '" src="' + path_highlights_A001+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A002_' + i + '" src="' + path_highlights_A002+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A003_' + i + '" src="' + path_highlights_A003+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A004_' + i + '" src="' + path_highlights_A004+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A005_' + i + '" src="' + path_highlights_A005+''+i+extencion+'"/>';
-
-
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B01_' + i + '" src="' + path_highlights_B01+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B02_' + i + '" src="' + path_highlights_B02+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B03_' + i + '" src="' + path_highlights_B03+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B04_' + i + '" src="' + path_highlights_B04+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B05_' + i + '" src="' + path_highlights_B05+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B06_' + i + '" src="' + path_highlights_B06+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B07_' + i + '" src="' + path_highlights_B07+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B08_' + i + '" src="' + path_highlights_B08+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B09_' + i + '" src="' + path_highlights_B09+''+i+extencion+'"/>';
 
 
         }

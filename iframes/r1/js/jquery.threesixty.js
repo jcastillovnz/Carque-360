@@ -177,21 +177,18 @@ for(i; i < l; i++){
 var display = (i === 0) ? 'visible' : 'hidden';
 var none = 'hidden'
 
-path_masks2="https://raw.githubusercontent.com/jcastillovnz/Carque-360/master/iframes/r1/img/r1/masks/"
 
 path_masks="img/r1/masks/"
 
-path_highlights_A101="img/r1/highlights/A101/"
-path_highlights_A102="img/r1/highlights/A102/"
-path_highlights_A103="img/r1/highlights/A103/"
-path_highlights_A104="img/r1/highlights/A104/"
-path_highlights_A105="img/r1/highlights/A105/"
-
-
-path_highlights_B101="img/r1/highlights/B101/"
-path_highlights_B102="img/r1/highlights/B102/"
-path_highlights_B103="img/r1/highlights/B103/"
-
+path_highlights_B11="img/r1/highlights/B11/"
+path_highlights_B12="img/r1/highlights/B12/"
+path_highlights_B13="img/r1/highlights/B13/"
+path_highlights_B14="img/r1/highlights/B14/"
+path_highlights_B15="img/r1/highlights/B15/"
+path_highlights_B16="img/r1/highlights/B16/"
+path_highlights_B17="img/r1/highlights/B17/"
+path_highlights_B18="img/r1/highlights/B18/"
+path_highlights_B19="img/r1/highlights/B19/"
 
 
 extencion=".png"
@@ -199,16 +196,16 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 html += '<img class="masks center" alt="'+i+'" crossOrigin = "Anonymous"  style="visibility:' + display + ';" id="true"     data-index="' + i + '"   src="' + path_masks+''+i+extencion+'"/>';
 
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B11_' + i + '" src="' + path_highlights_B11+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B12_' + i + '" src="' + path_highlights_B12+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B13_' + i + '" src="' + path_highlights_B13+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B14_' + i + '" src="' + path_highlights_B14+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B15_' + i + '" src="' + path_highlights_B15+''+i+extencion+'"/>';
 
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A101_' + i + '" src="' + path_highlights_A101+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A102_' + i + '" src="' + path_highlights_A102+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A103_' + i + '" src="' + path_highlights_A103+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A104_' + i + '" src="' + path_highlights_A104+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A105_' + i + '" src="' + path_highlights_A105+''+i+extencion+'"/>';
-
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B101_' + i + '" src="' + path_highlights_B101+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B102_' + i + '" src="' + path_highlights_B102+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B103_' + i + '" src="' + path_highlights_B103+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B16_' + i + '" src="' + path_highlights_B16+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B17_' + i + '" src="' + path_highlights_B17+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B18_' + i + '" src="' + path_highlights_B18+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B19_' + i + '" src="' + path_highlights_B19+''+i+extencion+'"/>';
 
 
         }
@@ -415,11 +412,11 @@ if (hex==="#6e9c9f") {
 
  $(document).unbind("click");
 
-///A-101
+///B-11
 var id = img.alt; 
-var url="highlights_A101_";
+var url="highlights_B11_";
 var highlights_A101= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-101'); 
+document.getElementById("true").setAttribute('title', 'B-11'); 
 highlights_A101.style.visibility = "visible";
 highlights_A101.style.display = "block";
 $(document).click(function(e){
@@ -428,7 +425,7 @@ var loc = window.location;
 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
 var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 var url =route+"menu.html"
-var level1="img/r1/plans/A101/"
+var level1="img/r1/plans/B11/"
 var level2=0
 var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
 var myWindow = window.open(url , "_top", "");
@@ -442,7 +439,7 @@ e.stopImmediatePropagation();
 else
 {
 var id = img.alt; 
-var url="highlights_A101_";
+var url="highlights_B11_";
 var highlights_A101= document.getElementById(url+id);
 highlights_A101.style.visibility = "hidden";
 highlights_A101.style.display = "none";
