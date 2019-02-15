@@ -177,7 +177,10 @@ for(i; i < l; i++){
 var display = (i === 0) ? 'visible' : 'hidden';
 var none = 'hidden'
 
-path_masks="https://raw.githubusercontent.com/jcastillovnz/Orbital-3D/master/iframes/r1/img/r1/masks/"
+path_masks2="https://raw.githubusercontent.com/jcastillovnz/Carque-360/master/iframes/r1/img/r1/masks/"
+
+path_masks="img/r1/masks/"
+
 path_highlights_A101="img/r1/highlights/A101/"
 path_highlights_A102="img/r1/highlights/A102/"
 path_highlights_A103="img/r1/highlights/A103/"
