@@ -6,6 +6,8 @@ overflow:hidden;
 
 
 
+
+
 .center{
 position: relative;
 left: 50%;
@@ -25,7 +27,7 @@ z-index: 0;
 .threesixty-frame  {
 width:auto;
 height: 95%;
-display:block;
+visibility: visible;
  z-index: 0;
  position: absolute;
 }
@@ -33,7 +35,7 @@ display:block;
 .highlights{
 width:auto;
 height: 95%;
-display:block;
+visibility: visible;
 position: absolute;
 z-index: 2;
 display: none;
@@ -41,7 +43,7 @@ display: none;
 .masks{
 width:auto;
 height: 95%;
-display:block;
+visibility: visible;
 position: absolute;
  z-index: 3;
 -o-mix-blend-mode: multiply;
@@ -280,9 +282,33 @@ text-align: left;
 }
 
 
-#control-left{
-background-image: url(../img/buttons/button-left.png)
+
+.icon-play{
+background-image: url(../img/buttons/button-play.png)
 }
+.icon-play:hover{
+background-image: url(../img/buttons/button-play-hover.png)
+}
+
+
+.icon-pause{
+background-image: url(../img/buttons/button-pause.png)
+}
+.icon-pause:hover{
+background-image: url(../img/buttons/button-pause-hover.png)
+}
+
+
+
+#control-left{
+ background-image: url(../img/buttons/button-left.png)
+}
+
+
+
+
+
+
  #control-left:hover{
  background-image: url(../img/buttons/button-left-hover.png)
 }

@@ -282,9 +282,33 @@ text-align: left;
 }
 
 
-#control-left{
-background-image: url(../img/buttons/button-left.png)
+
+.icon-play{
+background-image: url(../img/buttons/button-play.png)
 }
+.icon-play:hover{
+background-image: url(../img/buttons/button-play-hover.png)
+}
+
+
+.icon-pause{
+background-image: url(../img/buttons/button-pause.png)
+}
+.icon-pause:hover{
+background-image: url(../img/buttons/button-pause-hover.png)
+}
+
+
+
+#control-left{
+ background-image: url(../img/buttons/button-left.png)
+}
+
+
+
+
+
+
  #control-left:hover{
  background-image: url(../img/buttons/button-left-hover.png)
 }

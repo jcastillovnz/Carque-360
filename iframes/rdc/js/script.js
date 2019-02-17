@@ -17,26 +17,41 @@ draggable: true,
 });
 
 
+
+
+
+
+
 var interval;
 
 
-$('.play').click(function(){
 
-var mode =this.value;
+
+
+$('#control-play').click(function(e){
+
+var mode = e.target.attributes.value.nodeValue;
+
+
 
 
 if (mode=="play") {
-document.getElementById("play-icon").className = "fas fa-pause-circle";	
+document.getElementById("control-play").className = "control play icon-pause";	
 interval = setInterval(play, 200);
-this.value="stop";
-
+e.target.attributes.value.nodeValue= "stop";
+console.log(mode);
 }
+
+
 
 if (mode=="stop") {
 
-document.getElementById("play-icon").className = "fas fa-play-circle";
+document.getElementById("control-play").className = "control play icon-play";	
 clearInterval(interval);
-this.value="play";
+
+e.preventDefault();
+e.target.attributes.value.nodeValue ="play";
+console.log(mode);
 
 }
 
@@ -44,6 +59,7 @@ this.value="play";
 
 
 function play() {
+
 $threeSixty.nextFrame();
 }
 
