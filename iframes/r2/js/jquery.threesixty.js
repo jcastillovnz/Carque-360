@@ -190,15 +190,15 @@ extencion=".png"
 html += '<img class="threesixty-frame renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 html += '<img class="masks center" alt="'+i+'" crossOrigin = "Anonymous"  style="visibility:' + display + ';" id="true"     data-index="' + i + '"   src="' + path_masks+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A201_' + i + '" src="' + path_highlights_A201+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A202_' + i + '" src="' + path_highlights_A202+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A203_' + i + '" src="' + path_highlights_A203+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_A204_' + i + '" src="' + path_highlights_A204+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B21_' + i + '" src="' + path_highlights_B21+''+i+extencion+'"/>';
+
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B22_' + i + '" src="' + path_highlights_B22+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B23_' + i + '" src="' + path_highlights_B23+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B24_' + i + '" src="' + path_highlights_B24+''+i+extencion+'"/>';
 
 
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B201_' + i + '" src="' + path_highlights_B201+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B202_' + i + '" src="' + path_highlights_B202+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B203_' + i + '" src="' + path_highlights_B203+''+i+extencion+'"/>';
+
+
 
 
         }
