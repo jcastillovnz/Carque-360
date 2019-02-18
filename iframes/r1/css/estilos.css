@@ -51,7 +51,7 @@ position: absolute;
 -moz-mix-blend-mode: multiply;
 mix-blend-mode: multiply;
 -webkit-mix-blend-mode: multiply;
-/opacity:1; /* Opacidad 60% */
+opacity:0; /* Opacidad 60% */
 }
 
 .btn-group {
