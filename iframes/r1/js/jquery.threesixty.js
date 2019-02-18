@@ -408,7 +408,7 @@ var hex =rgbToHex(r, g, b);
 
 console.log(hex);
 
-if (hex==="#e3b893") {
+if (hex==="#568187") {
 
  $(document).unbind("click");
 
@@ -448,7 +448,7 @@ highlights_B11.style.display = "none";
 }
 
 
-if (hex==="#b531a4") {
+if (hex==="#71567f") {
    $(document).unbind("click"); 
 ///B-12
 var id = img.alt; 
@@ -484,7 +484,7 @@ highlights_B12.style.display = "none";
 }
 
 
-if (hex==="#b794e3") {
+if (hex==="#bf83cb") {
  $(document).unbind("click");
 ///B-13
 
@@ -522,7 +522,7 @@ highlights_B13.style.visibility = "hidden";
 }
 
 
-if (hex==="#56cb56") {
+if (hex==="#4b677e") {
 $(document).unbind("click");
 ///B-14
 var id = img.alt; 
@@ -561,7 +561,7 @@ highlights_B14.style.display = "none";
 
 }
 
-if (hex==="#93e393") {
+if (hex==="#ec9b7b") {
 $(document).unbind("click");
 ///B-15
 var id = img.alt; 
@@ -602,7 +602,7 @@ highlights_B15.style.display = "none";
 
 
 
-if (hex==="#e5bfde") {
+if (hex==="#dfc9da") {
 
 
 $(document).unbind("click");
@@ -644,7 +644,7 @@ highlights_B16.style.display = "none";
 
 
 
-if (hex==="#acef2f") {
+if (hex==="#9da8c4") {
 $(document).unbind("click");
 ///B-17
 var id = img.alt; 
@@ -685,7 +685,7 @@ highlights_B17.style.display = "none";
 }
 
 
-if (hex==="#cb9456") {
+if (hex==="#746280") {
 $(document).unbind("click");
 ///B-18
 var id = img.alt; 
@@ -724,7 +724,7 @@ highlights_B18.style.display = "none";
 }
 
 
-if (hex==="#cb58bc") {
+if (hex==="#bf7e89") {
 $(document).unbind("click");
 ///B-19
 var id = img.alt; 
