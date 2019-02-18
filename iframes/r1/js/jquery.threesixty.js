@@ -644,7 +644,7 @@ highlights_B16.style.display = "none";
 
 
 
-if (hex==="#93e393") {
+if (hex==="#acef2f") {
 $(document).unbind("click");
 ///B-17
 var id = img.alt; 
