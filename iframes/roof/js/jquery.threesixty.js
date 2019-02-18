@@ -180,17 +180,30 @@ var none = 'hidden'
 
 path_masks="img/roof/masks/"
 
-path_highlights_B11="img/roof/highlights/B11/"
-path_highlights_B12="img/roof/highlights/B12/"
+path_highlights_B01="img/roof/highlights/B01/"
+path_highlights_B02="img/roof/highlights/B02/"
+path_highlights_B03="img/roof/highlights/B03/"
+path_highlights_B04="img/roof/highlights/B04/"
+path_highlights_B05="img/roof/highlights/B05/"
+path_highlights_B06="img/roof/highlights/B06/"
+path_highlights_B07="img/roof/highlights/B07/"
+path_highlights_B08="img/roof/highlights/B08/"
+path_highlights_B09="img/roof/highlights/B09/"
 
 
 extencion=".png"
 html += '<img class="threesixty-frame renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 html += '<img class="masks center" alt="'+i+'" crossOrigin = "Anonymous"  style="visibility:' + display + ';" id="true"     data-index="' + i + '"   src="' + path_masks+''+i+extencion+'"/>';
-
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B11_' + i + '" src="' + path_highlights_B11+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B12_' + i + '" src="' + path_highlights_B12+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B01_' + i + '" src="' + path_highlights_B01+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B02_' + i + '" src="' + path_highlights_B02+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B03_' + i + '" src="' + path_highlights_B03+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B04_' + i + '" src="' + path_highlights_B04+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B05_' + i + '" src="' + path_highlights_B05+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B06_' + i + '" src="' + path_highlights_B06+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B07_' + i + '" src="' + path_highlights_B07+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B08_' + i + '" src="' + path_highlights_B08+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B09_' + i + '" src="' + path_highlights_B09+''+i+extencion+'"/>';
 
 
         }
