@@ -35,8 +35,8 @@ $( window ).on( "load", function() {
 
 level1 = values['level1'];
 level2 = values['level2'];
-document.getElementById("plan-technique").style.backgroundImage = "url("+level1+"2D.png)";
-document.getElementById("plan-axo").style.backgroundImage = "url("+level1+"3D.png)";
+document.getElementById("plan-technique").style.backgroundImage = "url("+level1+"2D.jpg)";
+document.getElementById("plan-axo").style.backgroundImage = "url("+level1+"3D.jpg)";
                              
  if (level2==0){        
     

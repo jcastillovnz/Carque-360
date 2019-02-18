@@ -410,7 +410,7 @@ var hex =rgbToHex(r, g, b);
 
 console.log(hex);
 
-if (hex==="#b47b31") {
+if (hex==="#746280") {
 $(document).unbind("click");
 ///B-21
 var id = img.alt; 
@@ -445,7 +445,7 @@ highlights_B21.style.visibility = "hidden";
 }
 
 
-if (hex==="#b8e393") {
+if (hex==="#9fbdc1") {
 $(document).unbind("click");
 ///B-22
 var id = img.alt; 
@@ -481,7 +481,7 @@ highlights_B22.style.visibility = "hidden";
 
 
 
-if (hex==="#2bb42b") {
+if (hex==="#568187") {
 $(document).unbind("click");
 ///B-23
 var id = img.alt; 
@@ -519,6 +519,39 @@ highlights_B23.style.visibility = "hidden";
 
 
 
+if (hex==="#bf7e89") {
+$(document).unbind("click");
+///B-24
+var id = img.alt; 
+var url="highlights_B24_";
+var highlights_B24 = document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-24'); 
+highlights_B24.style.visibility = "visible";
+highlights_B24.style.display = "block";
+
+$(document).click(function(e){
+e.preventDefault();
+var loc = window.location;
+var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
+var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
+var url =route+"menu.html"
+var level1="img/r2/plans/B24/"
+var level2=0
+var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
+var myWindow = window.open(url , "_top", "");
+$(document).unbind("click");
+    e.stopImmediatePropagation()
+})
+}
+else
+{
+var id = img.alt; 
+var url="highlights_B24_";
+var highlights_B24 = document.getElementById(url+id);
+highlights_B24.style.display = "none";
+highlights_B24.style.visibility = "hidden";
+
+}
 
 
 

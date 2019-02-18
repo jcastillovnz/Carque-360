@@ -1,5 +1,12 @@
 
 
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+
+
+
+
 $( window ).on( "load", function() {
 
   document.getElementById("loader").style.display = "none";
