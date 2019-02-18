@@ -481,9 +481,9 @@ highlights_B22.style.visibility = "hidden";
 
 
 
-if (hex==="#b8e393") {
+if (hex==="#2bb42b") {
 $(document).unbind("click");
-///B-22
+///B-23
 var id = img.alt; 
 var url="highlights_B23_";
 var highlights_B23 = document.getElementById(url+id);
