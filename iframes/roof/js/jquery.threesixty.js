@@ -180,8 +180,6 @@ var none = 'hidden'
 
 path_masks="img/roof/masks/"
 
-
-
 extencion=".png"
 html += '<img class="threesixty-frame renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -314,8 +312,7 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
             $downElem.find('.masks').css({visibility: 'hidden'}).attr("id","false")  ;
             $downElem.find('.masks:eq(' + val + ')').css({display: 'block'}).css({visibility: 'visible'}).attr("id","true");
             $downElem.find('.highlights').css({display: 'none'}).css({visibility: 'hidden'});
-            canvas();
-
+         
 
 
         }
@@ -325,37 +322,14 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
 
 window.onload = function(e) {
 
-canvas(e);
+
 
   }
 
 
 
-Update = function(e) {
-
-canvas();
-
-    }
 
 
-
-
-function canvas(e) {
- 
-
-var img= document.getElementById('true');
-img.addEventListener('mousemove', function (e) {
-let ctx;
-this.canvas = document.createElement('canvas');
-this.canvas.width = this.width ;
-this.canvas.height = this.height;
-ctx=this.canvas.getContext('2d');
-ctx.drawImage(this, 0, 0, this.width, this.height);
-const pixel = ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data;
-detectar_color(ctx,e,img);   
-});
-
-}
 
 
 function detectar_color(ctx,e,img) {
@@ -387,324 +361,10 @@ var hex =rgbToHex(r, g, b);
 
 
 
-if (hex==="#6e9c9f") {
 
- $(document).unbind("click");
 
-///B-11
-var id = img.alt; 
-var url="highlights_B11_";
-var highlights_A101= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'B-11'); 
-highlights_A101.style.visibility = "visible";
-highlights_A101.style.display = "block";
-$(document).click(function(e){
-e.preventDefault();
-var loc = window.location;
-var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-var url =route+"menu.html"
-var level1="img/r1/plans/B11/"
-var level2=0
-var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
-var myWindow = window.open(url , "_top", "");
-$(document).unbind("click");
-e.stopImmediatePropagation();
-})
 
 
-
-}
-else
-{
-var id = img.alt; 
-var url="highlights_B11_";
-var highlights_A101= document.getElementById(url+id);
-highlights_A101.style.visibility = "hidden";
-highlights_A101.style.display = "none";
-
-
-}
-
-
-if (hex==="#ed8e8f") {
-   $(document).unbind("click"); 
-///A-102
-var id = img.alt; 
-var url="highlights_A102_";
-var highlights_A102= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-102'); 
-highlights_A102.style.visibility = "visible";
-highlights_A102.style.display = "block";
-$(document).click(function(e){
-e.preventDefault();
-
-
-var loc = window.location;
-var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-var url =route+"menu.html"
-var level1="img/r1/plans/A102/"
-var level2=0
-var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
-var myWindow = window.open(url , "_top", "");
-    $(document).unbind("click");
-    e.stopImmediatePropagation()
-})
-
-
-
-
-}
-else
-{
-var id = img.alt; 
-var url="highlights_A102_";
-var highlights_A102 = document.getElementById(url+id);
-highlights_A102.style.visibility = "hidden";
-highlights_A102.style.display = "none";
-
-}
-
-if (hex==="#788490") {
- $(document).unbind("click");
-///A-103
-
-var id = img.alt; 
-var url="highlights_A103_";
-var highlights_A103 = document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-103'); 
-highlights_A103.style.visibility = "visible";
-highlights_A103.style.display = "block";
-$(document).click(function(e){
-
-e.preventDefault();
-
-var loc = window.location;
-var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-var url =route+"menu.html"
-var level1="img/r1/plans/A103/"
-var level2=0
-var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
-var myWindow = window.open(url , "_top", "");
-    $(document).unbind("click");
-    e.stopImmediatePropagation()
-})
-
-
-}
-else
-{
-var id = img.alt; 
-var url="highlights_A103_";
-var highlights_A103 = document.getElementById(url+id);
-highlights_A103.style.visibility = "hidden";
-
-}
-
-
-if (hex==="#798490") {
-$(document).unbind("click");
-///A-104
-var id = img.alt; 
-var url="highlights_A104_";
-var highlights_A104 = document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-104'); 
-highlights_A104.style.visibility = "visible";
-highlights_A104.style.display = "block";
-
-
-$(document).click(function(e){
-e.preventDefault();
-
-
-var loc = window.location;
-var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-var url =route+"menu.html"
-var level1="img/r1/plans/A104/"
-var level2=0
-var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
-var myWindow = window.open(url , "_top", "");
-    $(document).unbind("click");
-    e.stopImmediatePropagation()
-})
-
-
-}
-else
-{
-var id = img.alt; 
-var url="highlights_A104_";
-var highlights_A104= document.getElementById(url+id);
-highlights_A104.style.visibility = "hidden";
-highlights_A104.style.display = "none";
-
-}
-
-if (hex==="#6f9c9f") {
-$(document).unbind("click");
-///A-105
-var id = img.alt; 
-var url="highlights_A105_";
-var highlights_A105= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-105'); 
-highlights_A105.style.visibility = "visible";
-highlights_A105.style.display = "block";
-
-$(document).click(function(e){
-e.preventDefault();
-
-
-
-var loc = window.location;
-var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-var url =route+"menu.html"
-var level1="img/r1/plans/A105/"
-var level2=0
-var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
-var myWindow = window.open(url , "_top", "");
-    $(document).unbind("click");
-    e.stopImmediatePropagation()
-})
-
-
-}
-else
-{
-var id = img.alt; 
-var url="highlights_A105_";
-var highlights_A105= document.getElementById(url+id);
-highlights_A105.style.visibility = "hidden";
-highlights_A105.style.display = "none";
-
-}
-
-
-
-if (hex==="#b9c3cc") {
-
-
-$(document).unbind("click");
-///B-101
-var id = img.alt; 
-var url="highlights_B101_";
-var highlights_B101= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'B-101'); 
-highlights_B101.style.visibility = "visible";
-highlights_B101.style.display = "block";
-
-$(document).click(function(e){
-e.preventDefault();
-
-
-
-var loc = window.location;
-var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-var url =route+"menu.html"
-var level1="img/r1/plans/B101/"
-var level2=0
-var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
-var myWindow = window.open(url , "_top", "");
-    $(document).unbind("click");
-    e.stopImmediatePropagation()
-})
-}
-else
-{
-var id = img.alt; 
-var url="highlights_B101_";
-var highlights_B101 = document.getElementById(url+id);
-highlights_B101.style.visibility = "hidden";
-highlights_B101.style.display = "none";
-
-
-}
-
-
-
-if (hex==="#bac3cc") {
-$(document).unbind("click");
-///B-102
-var id = img.alt; 
-var url="highlights_B102_";
-var highlights_B102= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'B-102'); 
- highlights_B102.style.visibility = "visible";
-highlights_B102.style.display = "block";
-
-
-$(document).click(function(e){
-e.preventDefault();
-
-
-
-var loc = window.location;
-var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-var url =route+"menu.html"
-var level1="img/r1/plans/B102/"
-var level2=0
-var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
-var myWindow = window.open(url , "_top", "");
-
-    e.stopImmediatePropagation()
-})
-
-
-}
-else
-{
-var id = img.alt; 
-var url="highlights_B102_";
-var highlights_B102= document.getElementById(url+id);
-highlights_B102.style.visibility = "hidden";
-highlights_B102.style.display = "none";
-
-}
-
-
-if (hex==="#ec8e8f") {
-$(document).unbind("click");
-///B-103
-var id = img.alt; 
-var url="highlights_B103_";
-var highlights_B103= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'B-103'); 
- highlights_B103.style.visibility = "visible";
- highlights_B103.style.display = "block";
-
-$(document).click(function(e){
-e.preventDefault();
-
-
-var loc = window.location;
-var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
-var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
-var url =route+"menu.html"
-var level1="img/r1/plans/B103/"
-var level2="../r6/img/r6/plans/B103/"
-var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
-var myWindow = window.open(url , "_top", "");
-    $(document).unbind("click");
-    e.stopImmediatePropagation()
-
-})
-
-
-}
-else
-{
-var id = img.alt; 
-var url="highlights_B103_";
-var highlights_B103= document.getElementById(url+id);
-highlights_B103.style.visibility = "hidden";
-highlights_B103.style.display = "none";
-
-}
 
 
 }

@@ -406,19 +406,19 @@ function rgbToHex(r, g, b) {
 
 var hex =rgbToHex(r, g, b);
 
+console.log(hex);
 
-
-if (hex==="#6e9c9f") {
+if (hex==="#568187") {
 
  $(document).unbind("click");
 
 ///B-11
 var id = img.alt; 
 var url="highlights_B11_";
-var highlights_A101= document.getElementById(url+id);
+var highlights_B11= document.getElementById(url+id);
 document.getElementById("true").setAttribute('title', 'B-11'); 
-highlights_A101.style.visibility = "visible";
-highlights_A101.style.display = "block";
+highlights_B11.style.visibility = "visible";
+highlights_B11.style.display = "block";
 $(document).click(function(e){
 e.preventDefault();
 var loc = window.location;
@@ -440,23 +440,23 @@ else
 {
 var id = img.alt; 
 var url="highlights_B11_";
-var highlights_A101= document.getElementById(url+id);
-highlights_A101.style.visibility = "hidden";
-highlights_A101.style.display = "none";
+var highlights_B11= document.getElementById(url+id);
+highlights_B11.style.visibility = "hidden";
+highlights_B11.style.display = "none";
 
 
 }
 
 
-if (hex==="#ed8e8f") {
+if (hex==="#71567f") {
    $(document).unbind("click"); 
-///A-102
+///B-12
 var id = img.alt; 
-var url="highlights_A102_";
-var highlights_A102= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-102'); 
-highlights_A102.style.visibility = "visible";
-highlights_A102.style.display = "block";
+var url="highlights_B12_";
+var highlights_B12= document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-12'); 
+highlights_B12.style.visibility = "visible";
+highlights_B12.style.display = "block";
 $(document).click(function(e){
 e.preventDefault();
 
@@ -465,38 +465,35 @@ var loc = window.location;
 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
 var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 var url =route+"menu.html"
-var level1="img/r1/plans/A102/"
+var level1="img/r1/plans/B12/"
 var level2=0
 var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
 var myWindow = window.open(url , "_top", "");
     $(document).unbind("click");
     e.stopImmediatePropagation()
 })
-
-
-
-
 }
 else
 {
 var id = img.alt; 
-var url="highlights_A102_";
-var highlights_A102 = document.getElementById(url+id);
-highlights_A102.style.visibility = "hidden";
-highlights_A102.style.display = "none";
+var url="highlights_B12_";
+var highlights_B12 = document.getElementById(url+id);
+highlights_B12.style.visibility = "hidden";
+highlights_B12.style.display = "none";
 
 }
 
-if (hex==="#788490") {
+
+if (hex==="#bf83cb") {
  $(document).unbind("click");
-///A-103
+///B-13
 
 var id = img.alt; 
-var url="highlights_A103_";
-var highlights_A103 = document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-103'); 
-highlights_A103.style.visibility = "visible";
-highlights_A103.style.display = "block";
+var url="highlights_B13_";
+var highlights_B13 = document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-13'); 
+highlights_B13.style.visibility = "visible";
+highlights_B13.style.display = "block";
 $(document).click(function(e){
 
 e.preventDefault();
@@ -505,7 +502,7 @@ var loc = window.location;
 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
 var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 var url =route+"menu.html"
-var level1="img/r1/plans/A103/"
+var level1="img/r1/plans/B13/"
 var level2=0
 var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
 var myWindow = window.open(url , "_top", "");
@@ -518,22 +515,22 @@ var myWindow = window.open(url , "_top", "");
 else
 {
 var id = img.alt; 
-var url="highlights_A103_";
-var highlights_A103 = document.getElementById(url+id);
-highlights_A103.style.visibility = "hidden";
+var url="highlights_B13_";
+var highlights_B13 = document.getElementById(url+id);
+highlights_B13.style.visibility = "hidden";
 
 }
 
 
-if (hex==="#798490") {
+if (hex==="#4b677e") {
 $(document).unbind("click");
-///A-104
+///B-14
 var id = img.alt; 
-var url="highlights_A104_";
-var highlights_A104 = document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-104'); 
-highlights_A104.style.visibility = "visible";
-highlights_A104.style.display = "block";
+var url="highlights_B14_";
+var highlights_B14 = document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-14'); 
+highlights_B14.style.visibility = "visible";
+highlights_B14.style.display = "block";
 
 
 $(document).click(function(e){
@@ -544,7 +541,7 @@ var loc = window.location;
 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
 var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 var url =route+"menu.html"
-var level1="img/r1/plans/A104/"
+var level1="img/r1/plans/B14/"
 var level2=0
 var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
 var myWindow = window.open(url , "_top", "");
@@ -557,22 +554,22 @@ var myWindow = window.open(url , "_top", "");
 else
 {
 var id = img.alt; 
-var url="highlights_A104_";
-var highlights_A104= document.getElementById(url+id);
-highlights_A104.style.visibility = "hidden";
-highlights_A104.style.display = "none";
+var url="highlights_B14_";
+var highlights_B14= document.getElementById(url+id);
+highlights_B14.style.visibility = "hidden";
+highlights_B14.style.display = "none";
 
 }
 
-if (hex==="#6f9c9f") {
+if (hex==="#ec9b7b") {
 $(document).unbind("click");
-///A-105
+///B-15
 var id = img.alt; 
-var url="highlights_A105_";
-var highlights_A105= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'A-105'); 
-highlights_A105.style.visibility = "visible";
-highlights_A105.style.display = "block";
+var url="highlights_B15_";
+var highlights_B15= document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-15'); 
+highlights_B15.style.visibility = "visible";
+highlights_B15.style.display = "block";
 
 $(document).click(function(e){
 e.preventDefault();
@@ -583,7 +580,7 @@ var loc = window.location;
 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
 var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 var url =route+"menu.html"
-var level1="img/r1/plans/A105/"
+var level1="img/r1/plans/B15/"
 var level2=0
 var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
 var myWindow = window.open(url , "_top", "");
@@ -596,26 +593,26 @@ var myWindow = window.open(url , "_top", "");
 else
 {
 var id = img.alt; 
-var url="highlights_A105_";
-var highlights_A105= document.getElementById(url+id);
-highlights_A105.style.visibility = "hidden";
-highlights_A105.style.display = "none";
+var url="highlights_B15_";
+var highlights_B15= document.getElementById(url+id);
+highlights_B15.style.visibility = "hidden";
+highlights_B15.style.display = "none";
 
 }
 
 
 
-if (hex==="#b9c3cc") {
+if (hex==="#dfc9da") {
 
 
 $(document).unbind("click");
-///B-101
+///B-16
 var id = img.alt; 
-var url="highlights_B101_";
-var highlights_B101= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'B-101'); 
-highlights_B101.style.visibility = "visible";
-highlights_B101.style.display = "block";
+var url="highlights_B16_";
+var highlights_B16= document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-16'); 
+highlights_B16.style.visibility = "visible";
+highlights_B16.style.display = "block";
 
 $(document).click(function(e){
 e.preventDefault();
@@ -626,7 +623,7 @@ var loc = window.location;
 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
 var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 var url =route+"menu.html"
-var level1="img/r1/plans/B101/"
+var level1="img/r1/plans/B16/"
 var level2=0
 var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
 var myWindow = window.open(url , "_top", "");
@@ -637,25 +634,25 @@ var myWindow = window.open(url , "_top", "");
 else
 {
 var id = img.alt; 
-var url="highlights_B101_";
-var highlights_B101 = document.getElementById(url+id);
-highlights_B101.style.visibility = "hidden";
-highlights_B101.style.display = "none";
+var url="highlights_B16_";
+var highlights_B16 = document.getElementById(url+id);
+highlights_B16.style.visibility = "hidden";
+highlights_B16.style.display = "none";
 
 
 }
 
 
 
-if (hex==="#bac3cc") {
+if (hex==="#9da8c4") {
 $(document).unbind("click");
-///B-102
+///B-17
 var id = img.alt; 
-var url="highlights_B102_";
-var highlights_B102= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'B-102'); 
- highlights_B102.style.visibility = "visible";
-highlights_B102.style.display = "block";
+var url="highlights_B17_";
+var highlights_B17= document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-17'); 
+highlights_B17.style.visibility = "visible";
+highlights_B17.style.display = "block";
 
 
 $(document).click(function(e){
@@ -667,7 +664,7 @@ var loc = window.location;
 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
 var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 var url =route+"menu.html"
-var level1="img/r1/plans/B102/"
+var level1="img/r1/plans/B17/"
 var level2=0
 var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
 var myWindow = window.open(url , "_top", "");
@@ -680,23 +677,23 @@ var myWindow = window.open(url , "_top", "");
 else
 {
 var id = img.alt; 
-var url="highlights_B102_";
-var highlights_B102= document.getElementById(url+id);
-highlights_B102.style.visibility = "hidden";
-highlights_B102.style.display = "none";
+var url="highlights_B17_";
+var highlights_B17= document.getElementById(url+id);
+highlights_B17.style.visibility = "hidden";
+highlights_B17.style.display = "none";
 
 }
 
 
-if (hex==="#ec8e8f") {
+if (hex==="#746280") {
 $(document).unbind("click");
-///B-103
+///B-18
 var id = img.alt; 
-var url="highlights_B103_";
-var highlights_B103= document.getElementById(url+id);
-document.getElementById("true").setAttribute('title', 'B-103'); 
- highlights_B103.style.visibility = "visible";
- highlights_B103.style.display = "block";
+var url="highlights_B18_";
+var highlights_B18= document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-18'); 
+ highlights_B18.style.visibility = "visible";
+ highlights_B18.style.display = "block";
 
 $(document).click(function(e){
 e.preventDefault();
@@ -706,13 +703,12 @@ var loc = window.location;
 var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
 var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
 var url =route+"menu.html"
-var level1="img/r1/plans/B103/"
-var level2="../r6/img/r6/plans/B103/"
+var level1="img/r1/plans/B18/"
+var level2="../r6/img/r6/plans/B18/"
 var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
 var myWindow = window.open(url , "_top", "");
     $(document).unbind("click");
     e.stopImmediatePropagation()
-
 })
 
 
@@ -720,12 +716,58 @@ var myWindow = window.open(url , "_top", "");
 else
 {
 var id = img.alt; 
-var url="highlights_B103_";
-var highlights_B103= document.getElementById(url+id);
-highlights_B103.style.visibility = "hidden";
-highlights_B103.style.display = "none";
+var url="highlights_B18_";
+var highlights_B18= document.getElementById(url+id);
+highlights_B18.style.visibility = "hidden";
+highlights_B18.style.display = "none";
 
 }
+
+
+if (hex==="#bf7e89") {
+$(document).unbind("click");
+///B-19
+var id = img.alt; 
+var url="highlights_B19_";
+var highlights_B19= document.getElementById(url+id);
+document.getElementById("true").setAttribute('title', 'B-19'); 
+ highlights_B19.style.visibility = "visible";
+ highlights_B19.style.display = "block";
+
+$(document).click(function(e){
+e.preventDefault();
+
+
+var loc = window.location;
+var pathName = loc.pathname.substring(0, loc.pathname.lastIndexOf('/') + 1);
+var route= loc.href.substring(0, loc.href.length - ((loc.pathname + loc.search + loc.hash).length - pathName.length));
+var url =route+"menu.html"
+var level1="img/r1/plans/B19/"
+var level2="../r6/img/r6/plans/B19/"
+var url =route+"menu.html?level1="+level1+"&level2= "+level2+" "  ;
+var myWindow = window.open(url , "_top", "");
+    $(document).unbind("click");
+    e.stopImmediatePropagation()
+})
+
+
+}
+else
+{
+var id = img.alt; 
+var url="highlights_B19_";
+var highlights_B19= document.getElementById(url+id);
+highlights_B19.style.visibility = "hidden";
+highlights_B19.style.display = "none";
+
+}
+
+
+
+
+
+
+
 
 
 }
