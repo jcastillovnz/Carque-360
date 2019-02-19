@@ -764,7 +764,11 @@ highlights_B19.style.display = "none";
 
 
 
+if (hex==="#000000") {
 
+document.getElementById("true").setAttribute('title', ''); 
+
+}
 
 
 

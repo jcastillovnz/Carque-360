@@ -21,18 +21,26 @@
 
 
 
+
+
 </head>
 
+<script>
+$(document).ready(function(){
+  $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
 
 
 <body>
 
 
 
+ <a href="#" data-toggle="tooltip" title="Hooray!">Hover over me</a>
 
 
 <div  class="threesixty-wrapper ">
-<div   class="threesixty" id="{index}" data-path="img/r3/renders/{index}.jpg" data-count="31">
+<div    class="threesixty" id="{index}" data-path="img/r3/renders/{index}.jpg" data-count="31">
 </div>
 
 
@@ -40,7 +48,14 @@
 </div>
 <br>
 
-<div  class="btn-group btn-group-justified  " > 
+
+
+
+
+
+
+
+<div  class="btn-group btn-group-justified" > 
 	<div class="controller"> 
 
     <div class="control play icon-play" value="play" id="control-play"> </div>
@@ -49,21 +64,6 @@
 
 
 
-
-<!-- 
-<div  class="btn-group btn-group-justified  " >
-<button class="btn btn-warning prev btn-xs">
-<strong>
-<i class="fas fa-chevron-circle-left "></i>
-</strong>
-</button>
-<button class="btn btn-warning next btn-xs ">
-<strong>
-<i class="fas fa-chevron-circle-right  "></i>
-</strong>
-</button>
-</div>
- -->
 
 
 

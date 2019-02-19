@@ -185,12 +185,12 @@ path_highlights_B33="img/r3/highlights/B33/"
 
 
 extencion=".png"
-html += '<img class="threesixty-frame renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';
+html += '<img     class="threesixty-frame  renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-html += '<img class="masks center" alt="'+i+'" crossOrigin = "Anonymous"  style="visibility:' + display + ';" id="true"     data-index="' + i + '"   src="' + path_masks+''+i+extencion+'"/>';
-html += '<img class="highlights center"  data-toggle="tooltip"    style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B31_' + i + '" src="' + path_highlights_B31+''+i+extencion+'"/>';
-html += '<img class="highlights center"  data-toggle="tooltip"    style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B32_' + i + '" src="' + path_highlights_B32+''+i+extencion+'"/>';
-html += '<img class="highlights center"  data-toggle="tooltip"   style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B33_' + i + '" src="' + path_highlights_B33+''+i+extencion+'"/>';
+html += '<img   class="masks center" alt="'+i+'" crossOrigin = "Anonymous"  style="visibility:' + display + ';" id="true"     data-index="' + i + '"   src="' + path_masks+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B31_' + i + '" src="' + path_highlights_B31+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B32_' + i + '" src="' + path_highlights_B32+''+i+extencion+'"/>';
+html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B33_' + i + '" src="' + path_highlights_B33+''+i+extencion+'"/>';
 
         }
         $this.html(html);
@@ -389,9 +389,7 @@ function rgbToHex(r, g, b) {
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
 
-$(document).ready(function(){
-  $('[data-toggle="tooltip"]').tooltip();   
-});
+
 
 var hex =rgbToHex(r, g, b);
 
@@ -529,11 +527,11 @@ highlights_B33.style.visibility = "hidden";
 
 
 
+if (hex==="#000000") {
 
+document.getElementById("true").setAttribute('title', ''); 
 
-
-
-
+}
 
 
 

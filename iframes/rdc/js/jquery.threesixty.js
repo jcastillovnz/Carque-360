@@ -609,7 +609,11 @@ highlights_A005.style.visibility = "hidden";
 
 
 
+if (hex==="#000000") {
 
+document.getElementById("true").setAttribute('title', ''); 
+
+}
 
 
 
