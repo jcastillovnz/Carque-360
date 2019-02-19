@@ -284,19 +284,15 @@ text-align: left;
 
 
 .icon-play{
-background-image: url(../img/buttons/button-play.png)
-}
-.icon-play:hover{
 background-image: url(../img/buttons/button-play-hover.png)
 }
 
 
+
 .icon-pause{
-background-image: url(../img/buttons/button-pause.png)
-}
-.icon-pause:hover{
 background-image: url(../img/buttons/button-pause-hover.png)
 }
+
 
 
 #control-left{

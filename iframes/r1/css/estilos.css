@@ -51,7 +51,7 @@ position: absolute;
 -moz-mix-blend-mode: multiply;
 mix-blend-mode: multiply;
 -webkit-mix-blend-mode: multiply;
-opacity:9.9; /* Opacidad 60% */
+/opacity:1; /* Opacidad 60% */
 }
 
 .btn-group {
@@ -284,19 +284,15 @@ text-align: left;
 
 
 .icon-play{
-background-image: url(../img/buttons/button-play.png)
-}
-.icon-play:hover{
 background-image: url(../img/buttons/button-play-hover.png)
 }
 
 
+
 .icon-pause{
-background-image: url(../img/buttons/button-pause.png)
-}
-.icon-pause:hover{
 background-image: url(../img/buttons/button-pause-hover.png)
 }
+
 
 
 #control-left{

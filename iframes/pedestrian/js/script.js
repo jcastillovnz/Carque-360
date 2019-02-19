@@ -27,7 +27,7 @@ var interval;
 $('#control-play').click(function(e){
 document.getElementById("control-pause").style.display = "block";	
 document.getElementById("control-play").style.display = "none";
-interval = setInterval(play, 300);
+interval = setInterval(play, 200);
 
 
 function play() {
