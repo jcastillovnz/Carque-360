@@ -24,38 +24,10 @@ draggable: true,
 
 var interval;
 
-
-
-
-
 $('#control-play').click(function(e){
-
-var mode = e.target.attributes.value.nodeValue;
-
-
-
-
-if (mode=="play") {
-document.getElementById("control-play").className = "control play icon-pause";	
-interval = setInterval(play, 200);
-e.target.attributes.value.nodeValue= "stop";
-console.log(mode);
-}
-
-
-
-if (mode=="stop") {
-
-document.getElementById("control-play").className = "control play icon-play";	
-clearInterval(interval);
-
-e.preventDefault();
-e.target.attributes.value.nodeValue ="play";
-console.log(mode);
-
-}
-
-
+document.getElementById("control-pause").style.display = "block";	
+document.getElementById("control-play").style.display = "none";
+interval = setInterval(play, 300);
 
 
 function play() {
@@ -63,10 +35,20 @@ function play() {
 $threeSixty.nextFrame();
 }
 
+});
 
 
+$('#control-pause').click(function(e){
+document.getElementById("control-pause").style.display = "none";	
+document.getElementById("control-play").style.display = "block";
+clearInterval(interval);
 
 });
+
+
+
+
+
 
 
 

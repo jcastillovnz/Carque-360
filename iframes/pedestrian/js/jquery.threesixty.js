@@ -7,9 +7,9 @@
  */
 
 $(document).ready(function(){
+
+
 (function ( $, window, document, undefined ) {
-
-
 var scope,
     pluginName = 'threeSixty',
     defaults = {
@@ -50,56 +50,63 @@ var scope,
         if(options.useKeys === true) $(document).unbind('keydown', this.onKeyDown);
         $(this).removeData();
         $el.html('');
-    };
 
+
+
+    };
     $.fn.nextFrame = ThreeSixty.prototype.nextFrame = function(){
+
         $(this).each(function(i){
             var $this = $(this),
                 val = $this.data('lastVal') || 0,
                 thisTotal = $this.data('count');
 
             val = val + 1;
-
             $this.data('lastVal', val);
-
             if(val >= thisTotal) val = val % (thisTotal - 1);
             else if(val <= -thisTotal) val = val % (thisTotal - 1);
             if(val > 0) val = thisTotal - val;
-
             val = Math.abs(val);
+
 
 
             $this.find('.threesixty-frame').css({visibility: 'hidden'});
             $this.find('.threesixty-frame:eq(' + val + ')').css({ visibility: 'visible'}).css({display: 'block'});
-            canvas();
+            $this.find('.masks').css({visibility: 'hidden'}).attr("id","false");
+            $this.find('.masks:eq(' + val + ')').css({display: 'block'}).css({ visibility: 'visible'}).attr("id","true");
+            $this.find('.highlights').css({display: 'none'}).css({visibility: 'hidden'});
+       
 
-         
 
 
-
-
-        });
+              
+    });
     };
 
+
+
+
+
     $.fn.prevFrame = ThreeSixty.prototype.prevFrame = function(){
-        $(this).each(function(i){
+
+    
+     $(this).each(function(i){
             var $this = $(this),
-                val = $this.data('lastVal') || 0,
-                thisTotal = $this.data('count');
-
+            val = $this.data('lastVal') || 0,
+            thisTotal = $this.data('count');
             val = val - 1;
-
             $this.data('lastVal', val);
-
             if(val >= thisTotal) val = val % (thisTotal - 1);
             else if(val <= -thisTotal) val = val % (thisTotal - 1);
             if(val > 0) val = thisTotal - val;
-
             val = Math.abs(val);
+  
+            $this.find('.threesixty-frame').css({visibility: 'hidden'});
+            $this.find('.threesixty-frame:eq(' + val + ')').css({ visibility: 'visible'}).css({display: 'block'});
+            $this.find('.masks').css({visibility: 'hidden'}).attr("id","false");
+            $this.find('.masks:eq(' + val + ')').css({display: 'block'}).css({ visibility: 'visible'}).attr("id","true");
+            $this.find('.highlights').css({display: 'none'}).css({visibility: 'hidden'});
 
-         $this.find('.threesixty-frame').css({visibility: 'hidden'});
-         $this.find('.threesixty-frame:eq(' + val + ')').css({ visibility: 'visible'}).css({display: 'block'});
-         canvas();
 
 
 
@@ -114,10 +121,8 @@ var scope,
      */
     ThreeSixty.prototype.init = function () {
         var $this = $(this.element);
-
         // setup main container
         $el = $this;
-
         // store data attributes for each 360
         $this.each(function(){
             var $this = $(this),
@@ -158,32 +163,28 @@ scope.onLoadAllComplete(index);
 };
 
 ThreeSixty.prototype.onLoadAllComplete = function(objIndex) {
-
-
-
 var $this = data[objIndex].$el,
 html = '',
 l = data[objIndex].count,
 pathTemplate = data[objIndex].path,
 i = 0;
-
-
-
 // remove preloader
 $this.html('');
 $this.removeClass('preloading');
 // add 360 images
 for(i; i < l; i++){
 var display = (i === 0) ? 'visible' : 'hidden';
+var none = 'hidden'
 
-var  prefijo = ''+i;////PREFIJO DE FRAME
-var indice =prefijo;
 
-var none = 'hidden';
+path_masks="img/roof/pedestrian/"
+
 extencion=".png"
-html += '<img class="threesixty-frame renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="'+pathTemplate.replace( '{index}', indice)+ '"/>';
+html += '<img class="threesixty-frame renders" style="visibility:' +display + ';" data-index="' + i + '"  id="' + i + '" src="' + pathTemplate.replace('{index}', i) + '"/>';
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-}
+
+        }
         $this.html(html);
 
         this.attachHandlers(objIndex);
@@ -229,7 +230,6 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
 
 
 
-
         });
 
         // arrow keys
@@ -269,6 +269,7 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
 
     };
 
+
     ThreeSixty.prototype.onMove = function(screenX, screenY){
         if(isMouseDown){
             var x = screenX,
@@ -305,12 +306,12 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
             if(val > 0) val = thisTotal - val;
             val = Math.abs(val);
 
-
-
             $downElem.find('.threesixty-frame').css({visibility: 'hidden'});
-            $downElem.find('.threesixty-frame:eq(' + val + ')').css({visibility: 'visible'});
-
-
+            $downElem.find('.threesixty-frame:eq(' + val + ')').css({display: 'block'}).css({visibility: 'visible'});
+            $downElem.find('.masks').css({visibility: 'hidden'}).attr("id","false")  ;
+            $downElem.find('.masks:eq(' + val + ')').css({display: 'block'}).css({visibility: 'visible'}).attr("id","true");
+            $downElem.find('.highlights').css({display: 'none'}).css({visibility: 'hidden'});
+         
 
 
         }
@@ -320,43 +321,24 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
 
 window.onload = function(e) {
 
+
+
   }
 
 
-function canvas() {
-
-var img= document.getElementById('true');
-img.addEventListener('mousemove', function (e) {
-  let ctx;
-  if(!this.canvas) {
-      this.canvas = document.createElement('canvas');
-      this.canvas.width = this.width;
-      this.canvas.height = this.height;
-      ctx=this.canvas.getContext('2d');
-      ctx.drawImage(this, 0, 0, this.width, this.height);
-  } else {
-    ctx=this.canvas.getContext('2d');
-  }
-const pixel = ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data;
-detectar_color(ctx,e,img);
-
-               
-});
-
-
-}
 
 
 
 
 
 function detectar_color(ctx,e,img) {
+
+
 $(document).unbind("click");
+    
 ////DETECTAR COLORES
 //Covierto Color RGBA a Hexadecimal
 const pixel = ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data;
-
-
 r=pixel[0] ;
 g=pixel[1] ;
 b=pixel[2] ;
@@ -365,6 +347,9 @@ function componentToHex(c) {
     var hex = c.toString(16);
     return hex.length == 1 ? "0" + hex : hex;
 }
+
+
+
 function rgbToHex(r, g, b) {
     return "#" + componentToHex(r) + componentToHex(g) + componentToHex(b);
 }
@@ -374,7 +359,17 @@ function rgbToHex(r, g, b) {
 var hex =rgbToHex(r, g, b);
 
 
+
+
+
+
+
+
+
 }
+
+
+
 
 
 
@@ -386,9 +381,13 @@ var hex =rgbToHex(r, g, b);
 
 
     ThreeSixty.prototype.onKeyDown = function(e) {
+
+
         switch(e.keyCode){
             case 37: // left
              $el.prevFrame();
+            
+
              //$el.canvas();
                 break;
             case 39: // right
@@ -399,9 +398,13 @@ var hex =rgbToHex(r, g, b);
     };
 
     ThreeSixty.prototype.onMouseUp = function(e) {
-        isMouseDown = false;
-        //$downElem.trigger('up');
-         
+
+
+
+isMouseDown = false;
+
+
+
 
 
     };
@@ -443,9 +446,4 @@ var hex =rgbToHex(r, g, b);
 
 
 
-
-
-
-
   });
-

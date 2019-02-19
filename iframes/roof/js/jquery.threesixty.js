@@ -75,8 +75,7 @@ var scope,
             $this.find('.masks').css({visibility: 'hidden'}).attr("id","false");
             $this.find('.masks:eq(' + val + ')').css({display: 'block'}).css({ visibility: 'visible'}).attr("id","true");
             $this.find('.highlights').css({display: 'none'}).css({visibility: 'hidden'});
-            canvas();
-
+       
 
 
 

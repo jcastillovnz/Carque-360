@@ -290,8 +290,12 @@ background-image: url(../img/buttons/button-play.png)
 background-image: url(../img/buttons/button-play-hover.png)
 }
 
+#control-pause{
+   display: none;
+}
 
 .icon-pause{
+
 background-image: url(../img/buttons/button-pause.png)
 }
 .icon-pause:hover{
