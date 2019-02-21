@@ -24,16 +24,9 @@ draggable: true,
 
 var interval;
 
-
-
-
-
 $('#control-play').click(function(e){
 
 var mode = e.target.attributes.value.nodeValue;
-
-
-
 
 if (mode=="play") {
 document.getElementById("control-play").className = "control play icon-pause";	
@@ -42,26 +35,21 @@ e.target.attributes.value.nodeValue= "stop";
 console.log(mode);
 }
 
-
-
 if (mode=="stop") {
-
 document.getElementById("control-play").className = "control play icon-play";	
 clearInterval(interval);
-
 e.preventDefault();
 e.target.attributes.value.nodeValue ="play";
 console.log(mode);
 
 }
-
-
-
-
 function play() {
 
 $threeSixty.nextFrame();
 }
+
+
+
 
 
 
