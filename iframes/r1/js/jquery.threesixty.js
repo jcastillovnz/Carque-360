@@ -196,16 +196,23 @@ html += '<img class="threesixty-frame renders" style="visibility:' +display + ';
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 html += '<img class="masks center" alt="'+i+'" crossOrigin = "Anonymous"  style="visibility:' + display + ';" id="true"     data-index="' + i + '"   src="' + path_masks+''+i+extencion+'"/>';
 
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B11_' + i + '" src="' + path_highlights_B11+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B12_' + i + '" src="' + path_highlights_B12+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B13_' + i + '" src="' + path_highlights_B13+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B14_' + i + '" src="' + path_highlights_B14+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B15_' + i + '" src="' + path_highlights_B15+''+i+extencion+'"/>';
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B11_' + i + '" src="' + path_highlights_B11+''+i+extencion+'"/>';
 
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B16_' + i + '" src="' + path_highlights_B16+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B17_' + i + '" src="' + path_highlights_B17+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B18_' + i + '" src="' + path_highlights_B18+''+i+extencion+'"/>';
-html += '<img class="highlights center"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B19_' + i + '" src="' + path_highlights_B19+''+i+extencion+'"/>';
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B12_' + i + '" src="' + path_highlights_B12+''+i+extencion+'"/>';
+
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B13_' + i + '" src="' + path_highlights_B13+''+i+extencion+'"/>';
+
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B14_' + i + '" src="' + path_highlights_B14+''+i+extencion+'"/>';
+
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B15_' + i + '" src="' + path_highlights_B15+''+i+extencion+'"/>';
+
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B16_' + i + '" src="' + path_highlights_B16+''+i+extencion+'"/>';
+
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B17_' + i + '" src="' + path_highlights_B17+''+i+extencion+'"/>';
+
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B18_' + i + '" src="' + path_highlights_B18+''+i+extencion+'"/>';
+
+html += '<img class="highlights center tooltiptext"     style="visibility:' + none + ';" data-index="' + i + '"  id="highlights_B19_' + i + '" src="' + path_highlights_B19+''+i+extencion+'"/>';
 
 
         }
