@@ -52,12 +52,16 @@ button:hover{
 							}
 
 							#plan-technique{
-								background-size:80%;
+						/*		height: 120%;*/
+						background-size: 70%;
 								background-image: url();
+
 							}
 
 							#plan-axo{
-								background-size:65%;
+						background-size: 60%;
+					
+
 								background-image: url();
 							}
 
