@@ -5,6 +5,34 @@ overflow:hidden;
 }
 
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+   
+    max-width:100px;
+    padding:15px;
+    min-height:30px;
+    background:#fff;
+    visibility: hidden;
+    border: 1px solid black;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    word-wrap:break-word;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
 
 
 
@@ -299,6 +327,9 @@ background-image: url(../img/buttons/button-pause-hover.png)
  background-image: url(../img/buttons/button-left.png)
 }
 
+ #control-pause{
+display: none;
+}
 
 
 
