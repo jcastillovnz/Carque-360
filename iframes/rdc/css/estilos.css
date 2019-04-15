@@ -33,12 +33,17 @@ visibility: visible;
 }
 
 .highlights{
-width:auto;
 height: 95%;
+width:auto;
+z-index: 3;
 visibility: visible;
 position: absolute;
-z-index: 2;
+pointer-events:none;
 display: none;
+
+
+
+
 }
 .masks{
 width:auto;
@@ -51,7 +56,7 @@ position: absolute;
 -moz-mix-blend-mode: multiply;
 mix-blend-mode: multiply;
 -webkit-mix-blend-mode: multiply;
-/opacity:1; /* Opacidad 60% */
+opacity: 0;
 }
 
 .btn-group {
@@ -299,6 +304,9 @@ background-image: url(../img/buttons/button-pause-hover.png)
  background-image: url(../img/buttons/button-left.png)
 }
 
+ #control-pause{
+display: none;
+}
 
 
 
