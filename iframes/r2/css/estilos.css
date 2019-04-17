@@ -5,6 +5,34 @@ overflow:hidden;
 }
 
 
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+   
+    max-width:100px;
+    padding:15px;
+    min-height:30px;
+    background:#fff;
+    visibility: hidden;
+    border: 1px solid black;
+    color: #000;
+    text-align: center;
+    border-radius: 6px;
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    word-wrap:break-word;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+}
+
+
 
 
 
@@ -17,51 +45,60 @@ transform: translate(-50%, 0);
   }
 
 .renders{
+height:155%;
+
 position: relative;
 left: 50%;
+bottom:150%;
+top:-20%;
 transform: translate(-50%, 0);
 -ms-transform: translate(-50%, 0);
 -webkit-transform: translate(-50%, 0);
 z-index: 0;
   }
 .threesixty-frame  {
-width:auto;
-height: 95%;
+height:155%;
 visibility: visible;
  z-index: 0;
  position: absolute;
 }
 
 .highlights{
-height: 95%;
-width:auto;
-z-index: 3;
+  pointer-events: none;
+height:155%;
+position: relative;
+left: 50%;
+bottom:150%;
+top:-20%;
+
+height:155%;
 visibility: visible;
 position: absolute;
-pointer-events:none;
+z-index: 2;
 display: none;
-
-
-
-
 }
 .masks{
-width:auto;
-height: 95%;
-visibility: visible;
+
+
+height:155%;
+position: relative;
+left: 50%;
+bottom:150%;
+top:-20%;
+
+
+
+
 position: absolute;
- z-index: 3;
--o-mix-blend-mode: multiply;
--ms-mix-blend-mode: multiply;
--moz-mix-blend-mode: multiply;
-mix-blend-mode: multiply;
--webkit-mix-blend-mode: multiply;
-opacity: 0;
+visibility: visible;
+display: block;
+z-index: 1;
+opacity:0; /* Opacidad 60% */
 }
 
 .btn-group {
-  z-index: 4;
-margin-top: 43%;
+z-index: 110;
+margin-top: 44%;
 width: 100%;
 justify-content: center;
 
