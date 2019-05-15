@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 :root {
-    --emerige-color:#C4583A;
+    --emerige-color:#9f8d81;
 }
 
 button {
@@ -53,13 +53,13 @@ button:hover{
 
 							#plan-technique{
 						/*		height: 120%;*/
-						background-size: 70%;
+						background-size: 75%;
 								background-image: url();
 
 							}
 
 							#plan-axo{
-						background-size: 60%;
+						background-size: 52%;
 					
 
 								background-image: url();
