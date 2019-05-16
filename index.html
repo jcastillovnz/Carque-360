@@ -203,18 +203,18 @@ height:100%;
           <h2>VUES</h2>
         </div>
         <div class="filter-button">
-          <a onclick="roof()"  >
-            <button class="button large active"> 
+
+
+
+            <button id="aerienne" onclick="roof(this)"  class="nav-link button large active"> 
               Aérienne
             </button>
-          </a>
+         
 
-
-          <a onclick="pedestrian()"  >
-            <button class="button large"> 
+            <button  id="pietonne" onclick="pedestrian(this)"  class="nav-link button large"> 
               Piétonne
             </button>
-          </a>
+          
 
 
           
@@ -226,33 +226,33 @@ height:100%;
         <div class="filter-title">
           <h2>NIVEAUX</h2>
         </div>
-        <div class="filter-button">
+        <div id="myDIV" class="filter-button">
 
 
 
-             <a  onclick="r3()" >
-            <button class="button large"> 
+            
+            <button id="3" onclick="r3(this)" class="nav-link button large"> 
               3<sup>e</sup> Étage
             </button>
-          </a>
+       
 
-              <a   onclick="r2()" >
-            <button class="button large"> 
+            
+            <button id="2" onclick="r2(this)" class="nav-link button large"> 
               2<sup>e</sup> Étage
             </button>
-          </a>
+         
 
-          <a   onclick="r1()" >
-            <button class="button large"> 
+        
+            <button id="1" onclick="r1(this)" class="nav-link button large"> 
               1<sup>e</sup> Étage
             </button>
-          </a>
+      
 
-          <a  onclick="rdc()" >
-            <button  class="button large"> 
+        
+            <button id="rdc" onclick="rdc(this)" class="nav-link button large"> 
               Rdc
             </button>
-          </a>
+        
         </div>
       </div>
     </div>
@@ -267,27 +267,64 @@ height:100%;
 var iframe = document.getElementById('iframe');
 
 
-function rdc() {
+
+function quitarActive () {
+
+$('.nav-link').removeClass("active")
+
+}
+
+function addActive (e) {
+
+$('#'+e).addClass("active")
+
+}
+
+
+
+function rdc(event) {
 iframe.src = "iframes/rdc/index.html";
+quitarActive();
+addActive(event.id);
+
+
 }
-function r1() {
+function r1(event) {
 iframe.src = "iframes/r1/index.html";
+quitarActive();
+addActive(event.id);
 }
-function r2() {
+function r2(event) {
 iframe.src ="iframes/r2/index.html";
+
+quitarActive(event);
+addActive(event.id);
 }
-function r3() {
+function r3(event) {
 iframe.src = "iframes/r3/index.html";
+
+quitarActive();
+addActive(event.id);
 }
 
 
 
-function roof() {
+function roof(event) {
 iframe.src = "iframes/roof/index.html";
+quitarActive();
+addActive(event.id);
 }
-function pedestrian() {
+function pedestrian(event) {
 iframe.src = "iframes/pedestrian/index.html";
+quitarActive();
+addActive(event.id);
 }
+
+
+
+
+
+
 
 
 
