@@ -445,7 +445,7 @@ highlights_B21.style.visibility = "hidden";
 }
 
 
-if (hex==="#9fbdc1") {
+if ( hex=="#9fbdc0" ||   hex=="#9fbdc1") {
 $(document).unbind("click");
 ///B-22
 var id = img.alt; 

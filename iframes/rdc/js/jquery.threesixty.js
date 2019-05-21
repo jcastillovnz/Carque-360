@@ -337,34 +337,31 @@ html += '<img class="highlights center"     style="visibility:' + none + ';" dat
 
 
 window.onload = function(e) {
-canvas();
+
+canvas(e);
+
   }
 
 
-function canvas() {
+
+
+function canvas(e) {
+ 
+
 
 var img= document.getElementById('true');
+
+console.log(img);
 img.addEventListener('mousemove', function (e) {
-  let ctx;
-
-      this.canvas = document.createElement('canvas');
-      this.canvas.width = this.width;
-      this.canvas.height = this.height;
-      ctx=this.canvas.getContext('2d');
-      ctx.drawImage(this, 0, 0, this.width, this.height);
-
-    ctx=this.canvas.getContext('2d');
-  
+let ctx;
+this.canvas = document.createElement('canvas');
+this.canvas.width = this.width ;
+this.canvas.height = this.height;
+ctx=this.canvas.getContext('2d');
+ctx.drawImage(this, 0, 0, this.width, this.height);
 const pixel = ctx.getImageData(e.offsetX, e.offsetY, 1, 1).data;
-
-detectar_color(ctx,e,img);
-
-               
+detectar_color(ctx,e,img);   
 });
-
-
-
-
 
 }
 
@@ -581,7 +578,7 @@ highlights_B05.style.visibility = "hidden";
 }
 
 
-if (hex==="#ebbd72") {
+if (hex==="#ebbd72" || hex==="#eabc72" ) {
 $(document).unbind("click");
 ///B-06
 var id = img.alt; 
@@ -617,7 +614,7 @@ highlights_B06.style.visibility = "hidden";
 
 
 
-if (hex==="#9ddbe2") {
+if (hex==="#9ddbe2"  ||   hex==="#9ddae2"    ) {
 $(document).unbind("click");
 ///B-07
 var id = img.alt; 
@@ -651,7 +648,7 @@ highlights_B07.style.visibility = "hidden";
 
 }
 
-if (hex==="#9fbdc1") {
+if (hex==="#9fbdc1" ||  hex==="#9fbdc0"    ) {
 $(document).unbind("click");
 ///B-08
 var id = img.alt; 
@@ -687,7 +684,7 @@ highlights_B08.style.visibility = "hidden";
 
 
 
-if (hex==="#ec9b7b") {
+if (hex==="#ec9b7b"  ||  hex==="#eb9b7b"     ) {
 $(document).unbind("click");
 ///B-09
 var id = img.alt; 

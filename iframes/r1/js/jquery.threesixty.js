@@ -568,7 +568,10 @@ highlights_B14.style.display = "none";
 
 }
 
-if (hex==="#ec9b7b") {
+
+
+
+if (hex=="#ec9b7b" || hex=="#eb9b7b") {
 $(document).unbind("click");
 ///B-15
 var id = img.alt; 
@@ -609,7 +612,7 @@ highlights_B15.style.display = "none";
 
 
 
-if (hex==="#dfc9da") {
+if (hex==="#dfc9da" || hex=="#dec9da" ) {
 
 
 $(document).unbind("click");
