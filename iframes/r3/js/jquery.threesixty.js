@@ -397,7 +397,7 @@ console.log(hex);
 
 
 
-if (hex==="#9da8c4") {
+if (hex==="#9da8c4"  || hex==="#9da7c4"  ) {
 $(document).unbind("click");
 ///B-31
 var id = img.alt; 
