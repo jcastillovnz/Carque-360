@@ -395,8 +395,6 @@ var hex =rgbToHex(r, g, b);
 
 console.log(hex);
 
-
-
 if (hex==="#9da8c4"  || hex==="#9da7c4"  ) {
 $(document).unbind("click");
 ///B-31
